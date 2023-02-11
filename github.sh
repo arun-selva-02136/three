@@ -46,7 +46,7 @@ echo " done."
 # push to remote repo
 echo "Pushing to remote ..."
 git init
-git add -A
+git add *
 git commit -m "first commit"
 git remote rm origin
 git remote add origin git@github.com:$username/$reponame.git
