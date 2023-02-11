@@ -34,7 +34,8 @@ esac
 
 # create repo
 echo "Creating Github repository '$reponame' ..."
-curl -u $username https://api.github.com/user/repos -d '{"name":"'$reponame'"}'
+curl -i -H "Authorization: token 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" -d '{"name": "'$reponame'", "auto_init": true, "private": true, "gitignore_template": "nanoc"}' https://api.github.com/$username/$reponame
+#curl -u $username https://api.github.com/user/repos -d '{"name":"'$reponame'"}'
 echo " done."
 
 # create empty README.md
