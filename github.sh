@@ -59,7 +59,7 @@ read -p "Do you want to open the new repo page in browser?(y/n): " answer_browse
 case $answer_browser in
   y)
     echo "Opening in a browser ..."
-    open https://github.com/$username/$reponame
+    open https://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@github.com/$username/$reponame
     ;;
   n)
     ;;
