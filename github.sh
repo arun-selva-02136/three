@@ -34,7 +34,7 @@ esac
 
 # create repo
 echo "Creating Github repository '$reponame' ..."
-curl -i -H "Authorization: token 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" -d '{"name": "'$reponame'", "auto_init": true, "private": true, "gitignore_template": "nanoc"}' https://api.github.com/user/repo
+curl -i -H "Authorization: token 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" -d '{"name": "$reponame", "auto_init": true, "private": true, "gitignore_template": "nanoc"}' https://api.github.com/user/repo
 #curl -u $username https://api.github.com/user/repos -d '{"name":"'$reponame'"}'
 echo " done."
 
