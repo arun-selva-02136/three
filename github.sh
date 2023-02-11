@@ -48,7 +48,8 @@ git init
 git add -A
 git commit -m "first commit"
 git remote rm origin
-git remote add origin https://github.com/$username/$reponame.git
+git remote add origin git@github.com:$username/$reponame.git
+#git remote add origin https://github.com/$username/$reponame.git
 git push -u origin master
 echo " done."
 
